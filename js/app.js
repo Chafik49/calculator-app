@@ -196,7 +196,7 @@ function calculate(firstN , secondN , operand){
         result  = eval(firstN / secondN);
     }
    
-    secondPlace.textContent  = result;
+    secondPlace.textContent  = result.toFixed(2);
     
     
 }

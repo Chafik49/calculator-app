@@ -70,6 +70,8 @@
 
 body{
     font-family: 'Spartan', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .app-container{
@@ -79,12 +81,14 @@ body{
     display: flex;
     justify-content: center;
     transition: .3s;
+
 }
 
 .container{
     width: 500px;
     min-height: 300px;
     /* background-color: blue; */
+    overflow: hidden;
 }
 @media (max-width:767px) {
     .container{
@@ -200,9 +204,12 @@ header{
     transition: .4s;
     flex-wrap: wrap;
     height: fit-content;
+    /* overflow-x: hidden; */
+    word-break: break-all;
 
 
 }
+
 .output span:first-child{
     font-size: 16px;
     opacity: .7;
