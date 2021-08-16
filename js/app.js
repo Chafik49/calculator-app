@@ -177,6 +177,10 @@ resetBtn.addEventListener("click", ()=>{
 
 delBtn.addEventListener("click" , ()=>{
     secondPlace.textContent = secondPlace.textContent.slice(0 , -1);
+    if(secondPlace.textContent == ""){
+        secondPlace.textContent = "0";
+    }
+
 });
 
 var result = 0;
